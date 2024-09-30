@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Búsqueda de Hoteles</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/index.html"><img src="/imagenes/Logo.png" alt="Logo YoDa"></a>
+            <span>YoDa</span>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+        </div>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Hoteles</a>
+            <a href="#">Contacto</a>
+            <a href="#"><img class="user-image" src="/imagenes/user-icon.png" alt="Usuario"></a>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+
+    <div class="banner">
+        <form class="search-form">
+            <input type="text" placeholder="Destino" class="form-input">
+            <input type="date" class="form-input" placeholder="Fecha de entrada">
+            <input type="date" class="form-input" placeholder="Fecha de salida">
+            <select class="form-input">
+                <option value="" disabled selected>Seleccionar opción</option>
+                <option value="1">1 adulto</option>
+                <option value="2">2 adultos</option>
+                <option value="3">Familia</option>
+            </select>
+            <button type="button" class="search-button" onclick="window.location.href='Buscador.html'">Buscar</button>
+        </form>
+    </div>
+
+    <!-- Filtros -->
+    <section class="filters-section">
+        <h2>Filtros de Búsqueda</h2>
+
+        <div class="filter-container">
+            <select class="form-input">
+                <option value="" disabled selected>Ordenar como:</option>
+                <option value="mayorMenor">Mayor a Menor (Precio)</option>
+                <option value="menorMayor">Menor a Mayor (Precio)</option>
+            </select>
+        </div>
+
+        <div class="filter-container">
+            <select class="form-input">
+                <option value="" disabled selected>Precio:</option>
+                <option value="0-50">$0 - $50</option>
+                <option value="51-100">$51 - $100</option>
+                <option value="101-200">$101 - $200</option>
+                <option value="201-300">$201 - $300</option>
+                <option value="301-500">$301 - $500</option>
+            </select>
+        </div>
+
+        <div class="filter-container">
+            <select class="form-input">
+                <option value="" disabled selected>Valoraciones:</option>
+                <option value="5">5 Estrellas</option>
+                <option value="4">4 Estrellas</option>
+                <option value="3">3 Estrellas</option>
+                <option value="2">2 Estrellas</option>
+                <option value="1">1 Estrella</option>
+            </select>
+        </div>
+
+        <div class="filter-container">
+            <select class="form-input">
+                <option value="" disabled selected>Tipo de alojamiento:</option>
+                <option value="apartamentos">Apartamentos</option>
+                <option value="hoteles">Hoteles</option>
+                <option value="casasVacacionales">Casas Vacacionales</option>
+            </select>
+        </div>
+
+        <div class="filter-container">
+            <select class="form-input">
+                <option value="" disabled selected>Ubicación:</option>
+                <option value="madrid">Madrid</option>
+                <option value="tenerife">Tenerife</option>
+                <option value="barcelona">Barcelona</option>
+                <option value="lanzarote">Lanzarote</option>
+            </select>
+        </div>
+
+        <div class="filter-container">
+            <input type="text" class="form-input" placeholder="Filtro: Otros" />
+        </div>
+
+        <button type="submit" class="apply-filters-button">Aplicar Filtros</button>
+    </section>
+
+    <section class="hoteles-container">
+        <div class="hoteles-list">
+            <div class="hoteles-card">
+                <img src="/imagenes/Gran Hotel.jpg" alt="Alojamiento 1" class="hoteles-image">
+                <div class="alojamiento-content">
+                    <h3>Arrecife Gran Hotel & Spa</h3>
+                    <p>Hotel de 5 estrellas en Arrecife, Lanzarote en la Playa del Reducto</p>
+                </div>
+            </div>
+            <div class="hoteles-card">
+                <img src="/imagenes/Hotel Princess.jpg" alt="Alojamiento 2" class="hoteles-image">
+                <div class="alojamiento-content">
+                    <h3>Hotel Gran Canaria Princess</h3>
+                    <p>Hotel en Gran Canaria a solo 750 metros de la Playa del Inglés</p>
+                </div>
+            </div>
+            <div class="hoteles-card">
+                <img src="/imagenes/Alexandre Hotel.jpg" alt="Alojamiento 3" class="hoteles-image">
+                <div class="alojamiento-content">
+                    <h3>Alexandre Hotel La Siesta</h3>
+                    <p>Hotel de 4 estrellas en el corazón y centro turístico de Playa de las Américas en Tenerife</p>
+                </div>
+            </div>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.0409684580486!2d-13.558063100732664!3d28.959477370530625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc462782c42b11e3%3A0x509e713d66646ef8!2sArrecife%20Gran%20Hotel%20%26%20Spa!5e0!3m2!1ses!2ses!4v1727715100868!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <footer>
+        <hr class="footer-divider">
+        <p>&copy; 2024 YoDa. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
