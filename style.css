@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 0;
+    padding: 0; 
     box-sizing: border-box;
 }
 
@@ -81,7 +81,7 @@ nav a:hover {
 /* Banner */
 
 .banner {
-    background-image: url('/imagenes/banner.png'); 
+    background-image: url('./imagenes/banner.png'); 
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -375,3 +375,55 @@ footer {
 .login-button:hover {
     background-color: #0056b3; /* Color del botón al pasar el mouse */
 }
+
+.register-container {
+    margin: auto; /* Centra vertical y horizontalmente */
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Espaciado interno */
+    background-color: #fff; /* Fondo blanco para el formulario */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra del formulario */
+    width: 90%; /* Ancho del formulario */
+    max-width: 400px; /* Ancho máximo */
+}
+
+.register-button {
+    width: 100%; /* Botón de ancho completo */
+    padding: 10px; /* Espaciado interno */
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    font-size: 16px; /* Tamaño de fuente del botón */
+}
+
+.register-button:hover {
+    background-color: #0056b3; /* Color del botón al pasar el mouse */
+}
+
+@media all and (max-width: 800px){ /*tamaño de resolución <
+    800px*/
+     .section{flex-direction: column;} /*muestra el menú y
+    el aside en columna*/
+     .menu{
+     flex-direction: column;
+     height: auto; /*adapta el alto del contenedor*/
+     }
+     .aside{
+     display: flex;
+     justify-content: center;
+     } 
+}
+
+@media all and (max-width: 600px){ /*tamaño de resolución <
+    600px*/
+     .articulos{flex-direction: column;} /*muestra los artículos en
+    columna*/
+}
+
+@media all and (max-width: 400px){ /*tamaño de resolución
+    < 400px*/
+     .aside{flex-direction: column;} /*muestra el aside en
+    columna*/
+    }

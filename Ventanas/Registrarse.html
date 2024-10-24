@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="../style.css">
     <title>Registro - YoDa</title>
 </head>
 <body>
     <header>
         <div class="logo">
-            <a href="/index.html"><img src="/imagenes/Logo.png" alt="Logo YoDa"></a>
+            <a href="../index.html"><img src="../imagenes/Logo.png" alt="Logo YoDa"></a>
             <span>YoDa</span>
         </div>
         <nav>
-            <a href="/index.html">Inicio</a>
+            <a href="../index.html">Inicio</a>
             <a href="Hoteles.html">Hoteles</a>
             <a href="#">Contacto</a>
             <div class="user-dropdown">
                 <a href="#">
-                    <img class="user-image" src="/imagenes/user-icon.png" alt="Usuario">
+                    <img class="user-image" src="../imagenes/user-icon.png" alt="Usuario">
                 </a>
                 <div class="dropdown-content">
                     <a href="Login.html">Iniciar Sesión</a>
@@ -75,87 +75,5 @@
         <a href="#">Correo</a><br>
         <p>Telefono: 123456789</p>
     </footer>
-
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh; /* Hace que el contenedor principal ocupe al menos la altura de la ventana */
-            background-color: #f9f9f9; /* Color de fondo suave */
-            font-family: Arial, sans-serif; /* Fuente más amigable */
-        }
-
-        .register-container {
-            margin: auto; /* Centra vertical y horizontalmente */
-            text-align: center; /* Centra el texto */
-            padding: 20px; /* Espaciado interno */
-            background-color: #fff; /* Fondo blanco para el formulario */
-            border-radius: 10px; /* Bordes redondeados */
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra del formulario */
-            width: 90%; /* Ancho del formulario */
-            max-width: 400px; /* Ancho máximo */
-        }
-
-        .form-group {
-            margin-bottom: 15px; /* Espaciado entre los campos */
-        }
-
-        .form-input {
-            width: 100%; /* Ancho completo */
-            padding: 10px; /* Espaciado interno */
-            border: 1px solid #ccc; /* Bordes suaves */
-            border-radius: 5px; /* Bordes redondeados */
-            box-sizing: border-box; /* Para incluir padding y border en el ancho total */
-        }
-
-        .register-button {
-            width: 100%; /* Botón de ancho completo */
-            padding: 10px; /* Espaciado interno */
-            background-color: #007BFF; /* Color de fondo del botón */
-            color: white; /* Color del texto */
-            border: none; /* Sin borde */
-            border-radius: 5px; /* Bordes redondeados */
-            cursor: pointer; /* Cambia el cursor al pasar por encima */
-            font-size: 16px; /* Tamaño de fuente del botón */
-        }
-
-        .register-button:hover {
-            background-color: #0056b3; /* Color del botón al pasar el mouse */
-        }
-
-        footer {
-            margin-top: auto; /* Asegura que el footer esté en la parte inferior */
-            text-align: center; /* Centra el texto en el pie de página */
-        }
-
-        .user-dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: white;
-            min-width: 160px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            z-index: 1;
-        }
-
-        .user-dropdown:hover .dropdown-content {
-            display: block; /* Muestra el contenido al pasar el mouse */
-        }
-
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #f1f1f1;
-        }
-    </style>
 </body>
 </html>
