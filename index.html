@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e92bca462a.js" crossorigin="anonymous"></script>
     <title>Agencia YoDa</title>
 </head>
 <body>
@@ -18,23 +19,23 @@
             <input type="text" placeholder="Buscar...">
         </div>
         <nav>
-            <a href="/index.html">Inicio</a>
-            <a href="Ventanas/Hoteles.html">Hoteles</a>
-            <a href="#">Contacto</a>
+            <a href="/index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+            <a href="Ventanas/Hoteles.html"><i class="fa-solid fa-hotel"></i> Hoteles</a>
+            <a href="#"><i class="fa-solid fa-phone"></i> Contacto</a>
             <div class="user-dropdown" onclick="toggleDropdown()">
                 <img class="user-image" src="./imagenes/user-icon.png" alt="Usuario">
                 <div class="dropdown-content" id="dropdown">
-                    <a href="/Ventanas/Login.html">Iniciar Sesión</a>
-                    <a href="/Ventanas/Registrarse.html">Registrarse</a>
+                    <a href="./Ventanas/Login.html"><i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión</a>
+                    <a href="./Ventanas/Registrarse.html"><i class="fa-solid fa-registered"></i> Registrarse</a>
                 </div>
             </div>
         </nav>
-        <select name="idioma" id="button" class="idioma">
+        <i class="fa-solid fa-language"> <select name="idioma" id="button" class="idioma">
             <option value="lang">Español</option>
             <option value="lang">Inglés</option>
             <option value="lang">Frances</option>
             <option value="lang">Aleman</option>
-        </select>
+        </select></i>
     </header>
 
     <div class="banner">
@@ -48,7 +49,7 @@
                 <option value="2">2 adultos</option>
                 <option value="3">Familia</option>
             </select>
-            <a href="Ventanas/Buscador.html" class="search-button">Buscar</a>
+            <a href="Ventanas/Buscador.html" class="search-button"><i class="fa-solid fa-magnifying-glass"></i> Buscar</a>
         </form>
     </div>
 

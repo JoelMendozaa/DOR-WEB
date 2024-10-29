@@ -7,14 +7,16 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Hace que el contenedor principal ocupe al menos la altura de la ventana */
-    background-color: #f9f9f9; /* Color de fondo suave */
-    font-family: Arial, sans-serif; /* Fuente más amigable */
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    font-family: "Sniglet", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 /* Header */
 header {
-    display: flex;      /* Nos permite alinear los objetos que queramos */
-    justify-content: space-between;     /* Nos permite centrar imagenes */ 
+    display: flex;
+    justify-content: space-between; 
     align-items: center;
     background-color: #00aeff;
     padding: 10px 20px;
@@ -76,6 +78,8 @@ nav a:hover {
     height: 40px;
     border-radius: 50%;
     object-fit: cover;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* Banner */
@@ -402,28 +406,102 @@ footer {
     background-color: #0056b3; /* Color del botón al pasar el mouse */
 }
 
-@media all and (max-width: 800px){ /*tamaño de resolución <
-    800px*/
-     .section{flex-direction: column;} /*muestra el menú y
-    el aside en columna*/
-     .menu{
-     flex-direction: column;
-     height: auto; /*adapta el alto del contenedor*/
-     }
-     .aside{
-     display: flex;
-     justify-content: center;
-     } 
-}
-
-@media all and (max-width: 600px){ /*tamaño de resolución <
-    600px*/
-     .articulos{flex-direction: column;} /*muestra los artículos en
-    columna*/
-}
-
-@media all and (max-width: 400px){ /*tamaño de resolución
-    < 400px*/
-     .aside{flex-direction: column;} /*muestra el aside en
-    columna*/
+@media all and (max-width: 800px) {
+    header {
+        flex-direction: column;
+        text-align: center;
     }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .search-bar {
+        margin: 10px 0;
+        max-width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .banner {
+        height: 300px;
+    }
+
+    .info-table, .info-card-container, .hoteles-container, .alojamientos-container {
+        padding: 10px;
+    }
+
+    .card, .alojamiento-card, .hoteles-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .filters-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Breakpoint para pantallas pequeñas (600px o menos) */
+@media all and (max-width: 600px) {
+    .search-form {
+        flex-direction: column;
+        margin-top: 250px;
+        padding-bottom: 175px;
+    }
+
+    .info-section {
+        padding: 10px;
+    }
+
+    .info-table {
+        width: 100%;
+    }
+
+    .filters-section {
+        padding: 10px;
+        margin: 10px 0;
+        gap: 10px;
+    }
+
+    .card-content {
+        padding: 8px;
+    }
+
+    .user-dropdown .dropdown-content {
+        right: auto;
+        left: 0;
+    }
+}
+
+/* Breakpoint para pantallas muy pequeñas (400px o menos) */
+@media all and (max-width: 400px) {
+    header {
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .search-bar input {
+        max-width: 200px;
+    }
+
+    .info-card-container, .hoteles-container, .alojamientos-container {
+        padding: 5px;
+    }
+
+    .info-card-container .card,
+    .hoteles-card,
+    .alojamiento-card {
+        width: 100%;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
